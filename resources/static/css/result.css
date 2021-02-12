@@ -1,0 +1,68 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    margin:110px;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+div {
+    font-size: 20px;
+    margin: 50px;
+    color: antiquewhite;
+    align: center;
+    text-align: center;
+}
+
+
+
+.sliding-button {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    margin: 30px;
+    height: 50px;
+    width:170px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10px;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    background:#333;
+    outline: none;
+}
+.sliding-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: ff096c;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+    background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+.sliding-button:active,
+.sliding-button:focus{
+    outline: none !important;
+}

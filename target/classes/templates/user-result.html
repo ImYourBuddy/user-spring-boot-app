@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <link rel="stylesheet" th:href="@{/css/result.css}"/>
+    <title>Adding result</title>
+</head>
+<body>
+<h1>Data added successfully</h1>
+<div>
+    <p th:text="'First name: ' + ${user.firstName}"/>
+    <p th:text="'Middle name: ' + ${user.middleName}"/>
+    <p th:text="'Last name: ' + ${user.lastName}"/>
+    <p th:text="'Age: ' + ${user.age}"/>
+    <p th:text="'Email: ' + ${user.email}"/>
+    <p th:text="'Job: ' + ${user.job}"/>
+    <p th:text="'Salary: ' + ${user.salary}"/>
+    <button onclick="location.href='/new-user'" type="button" class="sliding-button">Submit another message</button>
+</div>
+</body>
+</html>

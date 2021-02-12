@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" th:href="@{/css/home.css}"/>
+    <title>Welcome</title>
+</head>
+<body>
+<form>
+    <p><button onclick="location.href='/new-user'" type="button">Add new user</button></p>
+    <p><button onclick="location.href='/search-user'" type="button">Search user</button></p>
+    <p><button onclick="location.href='/send-email'" type="button">Send email to user</button></p>
+</form>
+</body>
+</html>
