@@ -15,9 +15,19 @@ h2 {
     text-align: center;
     vertical-align: text-top;
 }
+form {
+    margin: 40px;
+    align: center;
+    text-align: center;
+}
+p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color:antiquewhite;
+}
+
 div {
     margin: 50px;
-    color: antiquewhite;
     align: center;
     text-align: center;
 }
