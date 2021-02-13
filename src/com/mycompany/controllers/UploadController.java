@@ -24,7 +24,7 @@ public class UploadController {
     private final String UPLOAD_DIR = "./uploads/";
 
     @GetMapping("/upload-file")
-    public String homepage() {
+    public String uploadForm() {
         return "upload";
     }
 
