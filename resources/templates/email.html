@@ -7,7 +7,6 @@
 </head>
 <body>
 <h1>Send your email</h1>
-<!--<h2>Enter who you want to send the email</h2>-->
 <form action="#" th:action="@{/send-email}" method="post">
     <h2>
         <div th:text="${message}" th:if="${message ne null}"></div>
@@ -18,7 +17,6 @@
     <p>
         Enter last name: <input type="text" th:value="${user.lastName}" name="lastName"/>
     </p>
-<!--    <h2>Enter your email</h2>-->
     <p>
         Enter subject: <input type="text" th:value="${email.subject}" name="subject"/>
     </p>
